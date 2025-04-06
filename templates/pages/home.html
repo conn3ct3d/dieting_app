@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 {% block content %}
-    <h1>Welcome to FitnessApp</h1>
-    <p>Track your fitness goals with FitnessApp</p>
+<link rel="stylesheet" href="{% static 'styles/home.css' %}">
+<div class="content-wrapper">
+    <h1>Crush Your Goals. Track Every Win.</h1>
+    <h3>Welcome to FitnessApp – Your Journey to Real, Consistent Results Starts Now.</h3>
+    <p>FitnessApp is a comprehensive fitness tracking application designed to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply maintain a healthy lifestyle, our app provides the tools and resources you need to succeed.</p>
+    <p>With FitnessApp, you can easily log your workouts, track your progress, and stay motivated on your fitness journey. Our user-friendly interface makes it easy to set goals, monitor your achievements, and celebrate your successes.</p>
+</div>
+  <script src="{% static 'scripts/darkMode.js' %}">
+  </script>
 {% endblock content %}

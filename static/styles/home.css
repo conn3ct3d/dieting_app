@@ -1,0 +1,69 @@
+:root {
+    --bg-color: #f7f9fc;
+    --text-color: #333;
+    --heading-color: #2c3e50;
+    --accent-color: #16a085;
+  }
+
+  body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #eee;
+    --heading-color: #ffffff;
+    --accent-color: #1abc9c;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  .content-wrapper {
+    padding: 2rem;
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 1000;
+  }
+
+  .theme-toggle:hover {
+    background: #148f77;
+  }
